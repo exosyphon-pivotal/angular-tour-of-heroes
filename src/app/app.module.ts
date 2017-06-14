@@ -7,17 +7,22 @@ import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from "app/hero-detail.component";
 import { HeroService } from "app/hero.service";
 import { AppComponent } from "app/app.component";
+import { RouterModule } from "@angular/router";
+import { DashboardComponent } from "app/dashboard.component";
+import { AppRoutingModule } from "app/app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
   ],
   providers: [
     HeroService,
