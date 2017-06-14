@@ -16,5 +16,4 @@ import { Hero } from "app/hero";
 })
 export class HeroDetailComponent {
   @Input() hero: Hero;
-
 }
